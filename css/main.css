@@ -32,6 +32,13 @@ a.col-whi:hover{
 .dis-blo{
 	display: block;
 }
+.intro {
+    padding: 2em 1em;
+}
+.bold {
+    font-weight: 600;
+}
+
 
 /* Header */
 .top-bar-header {
@@ -191,6 +198,58 @@ ul.slick-dots li.slick-active {
     transform: translateY(-15px);
 }
 
+/* Products */
+.title {
+    color: #97c000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.item-product {
+    position: relative;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.icon-add-favourites {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #97c019;
+    font-size: 20px;
+}
+.info-product h3 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.product-price {
+    font-size: 20px;
+}
+.product-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(111, 108, 108, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 100;
+    transition: all .3s ease;
+    transform: translateY(-101%);
+}
+.item-product:hover .product-mask{
+    transform: translateY(0%);
+}
+.slider-products{
+    padding: 20px 0;
+}
 
 @media (min-width: 768px){
     .content-info-contact {
@@ -225,6 +284,21 @@ ul.slick-dots li.slick-active {
     ul.slick-dots {
         position: absolute;
         bottom: 90px;
+    }
+    .title {
+        font-size: 28px;
+        margin: 15px 0 30px;
+    }
+    .item-product {
+        margin: 0 20px;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .slider-products .arrow-slick {
+        margin: 0;
+    }
+    .slider-products {
+        padding: 0 40px;
     }
 }
 
@@ -268,6 +342,9 @@ ul.slick-dots li.slick-active {
     }
     ul.main-menu li a:hover{
         color: #1c1c1c;
+    }
+    .intro {
+        padding: 3.5em 1em;
     }
 }
 
