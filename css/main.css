@@ -1,6 +1,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
+    color: #333333;
 }
 figure {
     margin: 0;
@@ -14,7 +15,10 @@ ul{
 }
 a{
 	transition: all .3s ease;
-	text-decoration: none;
+	text-decoration: none !important;
+}
+a.col-whi:hover{
+    color: #97c000;
 }
 .w-100{
 	width: 100%;
@@ -22,46 +26,177 @@ a{
 .col-whi{
 	color: #fff;
 }
-.col-gray{
-	color: gray;
+.col-green{
+	color: #97c000;
 }
 .dis-blo{
 	display: block;
 }
 
 /* Header */
-header {
-    background: #eaeaea;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-    width: 100%;
-    z-index: 101;
-}
-.content-header {
+.top-bar-header {
+    background: #1c1c1c;
+    padding: 5px 0;
+    position: relative;
+    z-index: 2;
+    min-height:40px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-.btn-menu-mobile{
-	color: #3e8024;
-	font-size: 28px;
-}
-.menu-mobile{
-	display: none;
-}
-.btn-menu-mobile:hover{
-	color: #adc619;
 }
 .header-brand {
     max-width: 90px;
 }
-.menu-top{
-	display: none;
+.info-contact,.navbar-menu,.navbar-menu-desktop {
+    display: none;
 }
-.menu-top ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.icon-generic {
+    font-size: 20px;
+    color: #fff;
+}
+.icon-generic:hover{
+    color: gray;
+}
+.languages-top a:first-child {
+    margin-right: 9px;
+}
+.bottom-bar-header {
+    background: #97c000;
+    padding: 10px 0;
+}
+.input-searcher {
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    color: #dddddd;
+}
+.input-searcher::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #dddddd;
+}
+.input-searcher::-moz-placeholder { /* Firefox 19+ */
+    color: #dddddd;
+}
+.input-searcher:-ms-input-placeholder { /* IE 10+ */
+    color: #dddddd;
+}
+.input-searcher:-moz-placeholder { /* Firefox 18- */
+    color: #dddddd;
+}
+.btn-searcher-form {
+    background: #fff;
+    border: none;
+    color: #dddddd;
+    font-size: 18px;
+    border-left: 1px solid #b7b2b2;
+    padding: 0px 8px;
+    transition: all .3s ease;
+}
+.btn-searcher-form:hover {
+    background: #1c1c1c;
+}
+.content-searcher form {
     display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px #0000008a;
+}
+.content-searcher {
+    position: absolute;
+    width: 100%;
+    background: #1c1c1c;
+    left: 0;
+    top: 40px;
+    padding: 10px;
+    transform: translateY(-100%);
+    z-index: 1;
+    transition: all .3s ease;
+    border-top: 1px solid #6d6d6d;
+}
+.content-searcher-show {
+    transform: translateY(0%);
+}
+.btn-searcher i:nth-child(2),.btn-searcher-active i:nth-child(1){
+    display: none;
+}
+.btn-searcher-active i:nth-child(2){
+    display: block;
+}
+.icons-shop a {
+    margin-left: 10px;
+}
+.mm-navbar{
+    color: rgb(255, 255, 255);
+    background: #1c1c1c;
+}
+.mm-menu,.mm-panels,.mm-panel {
+    background: #1c1c1c !important;
+}
+.mm-listitem {
+    color: rgb(255, 255, 255);
 }
 
+@media (min-width: 768px){
+    .content-info-contact {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .info-contact span i {
+        margin-right: 5px;
+    }
+    .info-contact span {
+        margin-left: 20px;
+    }
+    .info-contact {
+        display: block;
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px){
+    .btn-searcher, .toggle-menu-mobile {
+        display: none;
+    }
+    .icon-generic {
+        font-size: 24px;
+    }
+    .header-brand {
+        max-width: 155px;
+    }
+    .content-searcher {
+        position: static;
+        background: none;
+        padding: 0px 40px;
+        transform: translateY(0%) !important;
+        border-top: none;
+        transition: none;
+    }
+    .header-content-left {
+        width: 100%;
+        align-items: center;
+    }
+    .icons-shop {
+        min-width: 85px;
+    }
+    .navbar-menu-desktop{
+        display: block;
+    }
+    ul.main-menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0 10px 0;
+    }
+    ul.main-menu li a {
+        color: #fff;
+        display: block;
+        padding: 0 10px;
+    }
+    ul.main-menu li a:hover{
+        color: #1c1c1c;
+    }
+}
+
+@media (min-width: 1200px){
+    .header-content {
+        padding-left: 25px;
+    }
+}

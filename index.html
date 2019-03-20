@@ -8,7 +8,7 @@
 	<title>Página de Prueba</title>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
@@ -18,62 +18,141 @@
 <body>
 	<div class="main-page">
 		<header>
-			<div class="container">
-				<div class="content-header">
-					<div class="header-brand">
-						<figure>
-							<a href="index.html">
-								<img src="img/logo.png" class="img-fluid">
-							</a>
-						</figure>
-					</div>
-					
-					<div class="content-menu-top">
-						<a href="#menu" class="btn-menu-mobile">
-							<i class="fas fa-bars"></i>
+			<div class="top-bar-header">
+				<div class="container d-flex justify-content-between align-items-center">
+					<div class="content-info-contact">
+						<div class="info-contact">
+							<span>
+								<i class="fas fa-envelope"></i>
+								info@bshopcolombia.com
+							</span>
+							<span>
+								<i class="fas fa-phone"></i>
+								(+574) 615 2088 - (+571) 739 5971
+							</span>
+						</div>
+						<a href="#" id="btn-searcher" class="btn-searcher icon-generic">
+							<i class="fas fa-search"></i>
+							<i class="fas fa-times"></i>
 						</a>
-
-						<nav id="menu" class="menu-mobile">
-							<ul>
-								<li>
-									<a href="ayuda.html">
-										Ayuda
-									</a>
-								</li>
-								<li>
-									<a href="servicios.html">
-										Servicios Adicionales
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Cerrar Sesión
-					                </a>
-								</li>
-							</ul>
-						</nav>
-
-						<nav class="menu-top">
-							<ul>
-								<li>
-									<a href="ayuda.html">
-										Ayuda
-									</a>
-								</li>
-								<li>
-									<a href="servicios.html">
-										Servicios Adicionales
-									</a>
-								</li>
-								<li>
-									<a href="#" class="btn btn-sm btn-std-green">
-										<i class="fas fa-sign-out-alt"></i>
-										Cerrar Sesión
-					                </a>
-								</li>
-							</ul>
-						</nav>
 					</div>
+
+					<div class="languages-top">
+						<a href="/es/" class="col-whi">
+							<img src="img/flag-es.png" alt="Idioma Español">
+							<span>ES</span>
+						</a>
+						<a href="/en/" class="col-whi">
+							<img src="img/flag-en.png" alt="Idioma Inglés">
+							<span>EN</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-bar-header">
+				<div class="container">
+					<div class="header-content d-flex justify-content-between align-items-center">
+						<div class="header-content-left d-flex">
+							<div class="header-brand">
+								<figure>
+									<a href="index.html">
+										<img src="img/logo.png" class="img-fluid">
+									</a>
+								</figure>
+							</div>
+							<div class="content-searcher">
+								<form>
+									<input type="text" class="form-control input-searcher" placeholder="Buscar productos, marcas y más...">
+									<button type="submit" class="btn-searcher-form">
+										<i class="fas fa-search"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="header-content-right">
+							<div class="icons-shop">
+								<a href="#" class="icon-generic">
+									<i class="fas fa-shopping-cart"></i>
+								</a>
+								<a href="#" class="icon-generic">
+									<i class="fas fa-user-circle"></i>
+								</a>
+								<a href="#menu" class="toggle-menu-mobile icon-generic">
+									<i class="fas fa-bars"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<nav class="navbar-menu-desktop">
+						<ul class="main-menu">
+							<li>
+								<a href="#">Bshop</a>
+							</li>
+							<li>
+								<a href="#">Bicicleta</a>
+							</li>
+							<li>
+								<a href="#">Componentes</a>
+							</li>
+							<li>
+								<a href="#">Repuestos</a>
+							</li>
+							<li>
+								<a href="#">Partes</a>
+							</li>
+							<li>
+								<a href="#">Accesorios</a>
+							</li>
+							<li>
+								<a href="#">Indumentaria</a>
+							</li>
+							<li>
+								<a href="#">Alimentación</a>
+							</li>
+							<li>
+								<a href="#">Consumibles</a>
+							</li>
+							<li>
+								<a href="#">Contacto</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="menu" class="navbar-menu">
+						<ul>
+							<li>
+								<a href="#">Bshop</a>
+							</li>
+							<li>
+								<a href="#">Bicicleta</a>
+							</li>
+							<li>
+								<a href="#">Componentes</a>
+							</li>
+							<li>
+								<a href="#">Repuestos</a>
+							</li>
+							<li>
+								<a href="#">Partes</a>
+							</li>
+							<li>
+								<a href="#">Accesorios</a>
+							</li>
+							<li>
+								<a href="#">Indumentaria</a>
+							</li>
+							<li>
+								<a href="#">Alimentación</a>
+							</li>
+							<li>
+								<a href="#">Consumibles</a>
+							</li>
+							<li>
+								<a href="#">Contacto</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</header>
