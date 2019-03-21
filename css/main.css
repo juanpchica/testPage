@@ -326,6 +326,21 @@ ul.slick-dots li.slick-active {
     left: 35px;
 }
 
+/* Subscribe */
+.subscribe {
+    background: #97c000;
+}
+.content-input-subscribe {
+    margin-bottom: 10px;
+}
+.content-input-subscribe button {
+    background: #fff !important;
+    height: 35px;
+}
+.content-input-subscribe .input-searcher {
+    height: 35px;
+}
+
 @media (min-width: 580px){
     .about-us::before {
         width: 50%;
