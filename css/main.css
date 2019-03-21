@@ -213,8 +213,8 @@ ul.slick-dots li.slick-active {
 }
 .icon-add-favourites {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 4px;
+    right: 4px;
     color: #97c019;
     font-size: 20px;
 }
@@ -249,6 +249,38 @@ ul.slick-dots li.slick-active {
 }
 .slider-products{
     padding: 20px 0;
+}
+
+/* About Us */
+.about-us {
+    background: url(../img/bg-cycle.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.about-us::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(175, 218, 15, 0.24);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 0% 100%, 0% 100%);
+}
+.info-about-us {
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+@media (min-width: 580px){
+    .about-us::before {
+        width: 50%;
+        background: rgba(175, 218, 15, 0.24);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+    }
 }
 
 @media (min-width: 768px){
@@ -346,10 +378,21 @@ ul.slick-dots li.slick-active {
     .intro {
         padding: 3.5em 1em;
     }
+    .about-us {
+        padding: 80px !important;
+    }
 }
 
 @media (min-width: 1200px){
     .header-content {
         padding-left: 25px;
+    }
+    .title {
+        font-size: 28px;
+        margin: 15px 0 50px;
+    }
+    .about-us {
+        padding: 120px !important;
+        background-attachment: fixed;
     }
 }
