@@ -29,6 +29,9 @@ a.col-whi:hover{
 .col-green{
 	color: #97c000;
 }
+.col-gray{
+    color: #aaaaaa;
+}
 .dis-blo{
 	display: block;
 }
@@ -37,6 +40,9 @@ a.col-whi:hover{
 }
 .bold {
     font-weight: 600;
+}
+.relative{
+    position: relative;
 }
 
 
@@ -340,6 +346,37 @@ ul.slick-dots li.slick-active {
 .content-input-subscribe .input-searcher {
     height: 35px;
 }
+
+/* Footer */
+.footer-brand::before {
+    width: 100%;
+    content: "";
+    height: 2px;
+    background: #97c000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-brand {
+    position: relative;
+}
+.footer-brand img {
+    position: relative;
+    z-index: 1;
+}
+.social-footer {
+    padding-top: 30px;
+}
+.social-footer a {
+    font-size: 30px;
+    color: #97c000;
+    margin: 15px;
+}
+.social-footer a:hover{
+    color: #010101;
+}
+
 
 @media (min-width: 580px){
     .about-us::before {
